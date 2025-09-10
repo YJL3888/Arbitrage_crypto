@@ -18,10 +18,10 @@ binance.load_markets()
 coinbase = ccxt.coinbaseexchange({'enableRateLimit': True})
 coinbase.load_markets()
 
-symbols = ['BTC/USDT', 'ETH/USDT', 'SOL/USDT', 'ADA/USDT', 'XRP/USDT']  # Added more symbols for variety
+symbols = ['BTC/USDT', 'ETH/USDT', 'SOL/USDT', 'ADA/USDT', 'XRP/USDT'] #Bitcoin, Ethereum, Solana, Ada, XRP
 hypothetical_position_usd = 10000
-fee_rate = 0.0001  # Reduced for demo to trigger on small differences; set to 0.0 for even more
-total_simulated_profit = 0.0  # Running total of all simulated net profits
+fee_rate = 0.0001  # Reduced for demo, real fees are higher
+total_simulated_profit = 0.0
 
 def get_prices(exchange, symbol):
     try:
